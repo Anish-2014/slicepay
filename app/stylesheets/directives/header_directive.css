@@ -1,0 +1,140 @@
+.header-row{
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.icon-bar {
+    background-color: orange;
+}
+
+.navbar-brand {
+    padding-right: 0px;
+}
+.profile-details {
+    padding-top: 10px!important;
+}
+.profile-details > img {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.header-menus > li > a{
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    padding-right: 4px;
+    color: #4a4a4a;
+}
+
+.header-menus {
+    padding-top: 1px;
+    padding-right: 8%;
+}
+
+.logo {
+    width: 97px;
+    height: 21px;
+}
+
+.first-name {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    color: #f6a623;
+    display: inline;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+
+.user-navbar-mobile {
+    display: none!important;
+}
+
+@media (max-width: 863px) {
+    .user-navbar-mobile {
+        border: 1px solid lightgray;
+        position:relative;
+        z-index: 1;
+        background: white;
+    }
+    .user-navbar-default {
+        display: none;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        padding-right: 0px;
+        margin-right: 0px;
+        padding-left: 40px;
+    }
+    
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .collapse.in{
+        display:block !important;
+        margin-top: -1px;
+        z-index: 1;
+    }
+
+    .header-menus {
+        padding-right: 0px;
+        position: relative;
+        left: 38px;
+        width: 170px;
+        border: 1px solid lightgray;
+        padding: 0px;
+        background: white;
+        z-index: 1;
+        margin-top: -0.7px;
+    }
+    .navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    /* .navbar-nav .open .dropdown-menu {
+       position: relative;
+       float: none;
+       width: auto;
+       background-color: transparent;
+    } */
+
+    .profile-details > img {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+        box-shadow: none;
+        display: inline-block;
+        opacity: 0.5;
+    }
+    .profile-details {
+        padding-right: 15px;
+    }
+    .glyphicon.glyphicon-one-fine-empty-dot:before {
+        content:"\25cb";
+        font-size: 13px;
+    }
+   
+    .logo {
+        width: 140px;
+        height: 31px;
+    }
+}
