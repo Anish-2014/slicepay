@@ -2,6 +2,10 @@
     height: 61px;
 }
 
+.home-container {
+    overflow-x: hidden;
+}
+
 .main-container {
     padding-left: 5%;
     padding-right: 5%;
@@ -17,11 +21,11 @@
 
 .profile-details-lbl-row {
     margin-top: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 100px;
 }
 
 .apply-options-row {
-    margin-bottom: 9%;
+    margin-bottom: 70px;
 }
 
 .apply-options-row > div {

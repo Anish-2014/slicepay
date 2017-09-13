@@ -1,0 +1,134 @@
+.footer-first-row {
+    min-height: 130px;
+    background-color: #ffa04f;
+    overflow: hidden;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 4.5%;
+}
+
+.footer-first-row .first-col > div:first-child {
+    font-size: 26px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #ffffff;
+}
+
+.footer-first-row .first-col > div:nth-child(2) {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.second-col {
+    position: relative;
+    top: 18px;
+    margin-left: 3%;
+    max-width: 338px;
+    height: 38px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.second-col > div:first-child {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    color: #ffa04f;
+    line-height: 2.7;
+    margin-left: 4%;
+}
+
+.android-logo, .apple-logo {
+    float: right;
+    padding: 8px;
+}
+
+.footer-second-row {
+    background-color: #4a4a4a;
+    padding: 3%;
+}
+
+.quick-links > a > p{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    padding-right: 4%
+}
+
+.social-media-icon-list > a {
+    float: right;
+    padding-right: 8%;
+}
+
+.company-info > p {
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+}
+
+.security-detail-text > p {
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+    float: right;
+}
+
+.payment-icon-list > a {
+    float: right;
+    margin-right: 6%;
+}
+.payment-icon-list > a > img {
+    width: 42.1px;
+    height: 19.8px;
+}
+
+.footer-company-details {
+    margin-top: 40px;
+}
+
+.company-contact {
+    margin-top: 3%;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .footer-first-row {
+        min-height: 220px;
+    }
+
+    .quick-links > a {
+        margin-top: 1%;
+    }
+
+    .quick-links > a > p {
+        min-width: 120px;
+    }
+
+    .social-media-icon-list {
+        display: inline-block;
+        min-width: 250px;
+        margin-left: -15px;
+        margin-top: 5%;
+    }
+
+    .security-detail-text > p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .payment-icon-list > a {
+        float: left;
+    }
+}

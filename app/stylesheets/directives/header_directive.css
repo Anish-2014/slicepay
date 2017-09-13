@@ -92,6 +92,7 @@
         display:block !important;
         margin-top: -1px;
         z-index: 1;
+        margin-right: 0.5px;
     }
 
     .header-menus {
