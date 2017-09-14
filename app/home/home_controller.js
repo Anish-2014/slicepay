@@ -18,11 +18,15 @@
 		var svc = homeService;
 		/* ======================================== Public Methods ========================================= */
 		function openQstnModal () {
-			svc.getModalFormObj().then(function(rs) {
-				$scope.modalFormObj = rs.data;
-			}, function(err) {
-				console.log('Failed to get questions: ', err);
-			});
+			if(svc.modalFormObj) {
+				$scope.modalFormObj = svc.modalFormObj.data;
+			} else {
+				svc.getModalFormObj().then(function(rs) {
+					$scope.modalFormObj = rs.data;
+				}, function(err) {
+					console.log('Failed to get questions: ', err);
+				});
+			}
 		}
 		
 		function submit(formObj) {

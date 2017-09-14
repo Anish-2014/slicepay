@@ -17,7 +17,7 @@
             templateUrl: 'directives/modal/modal_directive.html',
             link: function(scope, element) {
                 scope.$watch('data', function(arr) {
-                    if(arr.length) {
+                    if(scope.data.length) {
                         scope.formObj = scope.data;
                         var element = angular.element('#myModal');
                         $(element).modal('show');
