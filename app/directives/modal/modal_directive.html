@@ -1,0 +1,33 @@
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Apply for Silver Access</h4>
+                <div class="help-text-modal">HELP</div>
+            </div>
+            <div class="modal-body">
+                <div class="qstn-form-container" ng-repeat="obj in formObj">
+                    <div ng-if="obj.input_type == 'dropdown'">
+                        <div class="qstn">{{obj.qstn}}</div>
+                        <div class="answers" ng-repeat="input in obj.input_data">
+                            <select class="dropdown-answers form-control" ng-model="input.value" ng-options="option for option in input.dropdown_options">
+                                <option value="" disabled selected>{{input.placeholder}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div ng-if="obj.input_type == 'text'">
+                        <div class="qstn">{{obj.qstn}}</div>
+                        <div class="answers" ng-repeat="input in obj.input_data">
+                            <input class="form-control input-text-answers" type="text" ng-model="input.value" placeholder="{{input.placeholder}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="apply" ng-click="submit(formObj)">
+                    <p>APPLY WITH THESE DETAILS!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
